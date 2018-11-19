@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// Use this for initialization
-void Start();
-public float Horizontalmovement;
-public Rigidbody2D rb;  
 
-		public class Playercontroller : MonoBehaviour {
-	
+public class PlayerController : MonoBehaviour {
+
+	public float Horizontalmovement;
+	public Rigidbody2D rb; 
+
 	void FixedUpdate () {
-		float horizontal = Input.GetAxis("horizontal") * horizontalmovement;
-		rb.velocity = new Vector2("horizontal*velocity) * horizontalmovement;
+		float horizontal = Input.GetAxis("Horizontal") * Horizontalmovement;
+		rb.velocity = new Vector2(horizontal, rb.velocity.y);
 	}
 }
