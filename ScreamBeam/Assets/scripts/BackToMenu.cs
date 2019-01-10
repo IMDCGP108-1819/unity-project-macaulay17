@@ -9,7 +9,7 @@ public class BackToMenu : MonoBehaviour {
 
     public void OnInstuctionsClick()
     {
-        SceneManager.LoadScene("main game");
+        SceneManager.LoadScene("Start game");
     }
 
 }
